@@ -1,0 +1,80 @@
+{
+  "blade_runner": {
+    "id": "blade_runner",
+    "name": "Blade Runner",
+    "tags": ["futuristic", "popular"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Blade_Runner.opus"
+  },
+  "chopin": {
+    "id": "chopin",
+    "name": "Chopin",
+    "tags": ["classical", "piano"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Chopin.opus"
+  },
+  "cold": {
+    "id": "cold",
+    "name": "Cold",
+    "tags": ["sad", "tragedy"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Cold.opus"
+  },
+  "fur_elise": {
+    "id": "fur_elise",
+    "name": "Fur Elise",
+    "tags": ["classical", "piano"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Fur_Elise.mp3"
+  },
+  "happy_violin": {
+    "id": "happy_violin",
+    "name": "Happy Violin",
+    "tags": ["joyful", "violin"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Happy_Violin.opus"
+  },
+  "le_monde": {
+    "id": "le_monde",
+    "name": "Le Monde",
+    "tags": ["classical", "groovy"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Le_Monde.mp3"
+  },
+  "paris": {
+    "id": "paris",
+    "name": "Paris",
+    "tags": ["suspense", "epic"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Paris.m4a"
+  },
+  "presto": {
+    "id": "presto",
+    "name": "Presto",
+    "tags": ["epic", "dramatic", "classical"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Presto.m4a"
+  },
+  "purity": {
+    "id": "purity",
+    "name": "Purity",
+    "tags": ["calm", "piano", "soothing"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Purity.m4a"
+  },
+  "signal": {
+    "id": "signal",
+    "name": "Signal",
+    "tags": ["tense", "mysterious"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Signal.m4a"
+  },
+  "snowfall": {
+    "id": "snowfall",
+    "name": "Snowfall",
+    "tags": ["calm", "moving"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Snowfall.mp3"
+  },
+  "tension_in_the_air": {
+    "id": "tension_in_the_air",
+    "name": "Tension in the Air",
+    "tags": ["serious", "dark", "cinematic"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Tension_In_The_Air.m4a"
+  },
+  "winter": {
+    "id": "winter",
+    "name": "Winter",
+    "tags": ["classical", "suspense"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Winter.m4a"
+  }
+}

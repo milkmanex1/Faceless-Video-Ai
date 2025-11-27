@@ -1,0 +1,52 @@
+{
+  "anime": {
+    "name": "Anime",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Anime.jpg",
+    "prompt": "A cinematic anime illustration inspired by the reference style. Soft detailed shading, luminous skin, large expressive eyes, delicate line art, ethereal lighting, elegant clothing folds. Inspired by high-quality anime character art."
+  },
+  "childrens_book": {
+    "name": "Childrens Book",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Children_book.png",
+    "prompt": "A warm, whimsical children's book illustration inspired by the reference style. Soft pastel colors, playful and friendly characters, hand-drawn storybook feel, simple shapes with charming details. Wholesome and magical atmosphere."
+  },
+  "comic_book": {
+    "name": "Comic Book",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Comic_book.jpg",
+    "prompt": "A bold comic book illustration inspired by the reference style. Strong inking, dramatic poses, vibrant colors, dynamic shadows, halftone textures. Emphasize energy, action, and a graphic novel feel."
+  },
+  "disney": {
+    "name": "Disney",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Disney.png",
+    "prompt": "A Disney-style animated illustration inspired by the reference style. Bright colors, exaggerated expressions, clean character outlines, magical lighting. Whimsical and cinematic atmosphere, reminiscent of classic Disney movies."
+  },
+  "fantasy_realism": {
+    "name": "Fantasy Realism",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Fantasy_realism.jpg",
+    "prompt": "A fantasy realism digital painting inspired by the reference style. Highly detailed textures, realistic anatomy blended with fantastical elements, epic lighting, and magical atmospheres. Emphasize lifelike yet otherworldly qualities."
+  },
+  "neon_futuristic": {
+    "name": "Neon Futuristic",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Neon_futuristic.jpg",
+    "prompt": "A neon futuristic cyberpunk illustration inspired by the reference style. Glowing neon lights, futuristic cityscapes, high-tech details, reflective surfaces. Emphasize vibrant colors, holograms, and a sci-fi cyberpunk mood."
+  },
+  "photo_realism": {
+    "name": "Photo Realism",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Photo_realism.avif",
+    "prompt": "A photorealistic digital artwork inspired by the reference style. Ultra-detailed textures, lifelike lighting, natural skin tones, and realistic depth of field. Emphasize clarity and accuracy, like a high-resolution photo."
+  },
+  "pixelated": {
+    "name": "Pixelated",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Pixelated.webp",
+    "prompt": "A retro pixel art illustration inspired by the reference style. Blocky 8-bit or 16-bit design, nostalgic video game aesthetics, simple characters, limited color palettes. Emphasize charm and nostalgia of old-school games."
+  },
+  "studio_ghibli": {
+    "name": "Studio Ghibli",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Studio_ghibli.webp",
+    "prompt": "A Studio Ghibli-inspired illustration. Soft painterly look, whimsical fantasy settings, expressive and charming characters, magical nature elements, warm and nostalgic atmosphere. Inspired by Hayao Miyazaki\u2019s film style."
+  },
+  "water_color": {
+    "name": "Water Color",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Water_color.webp",
+    "prompt": "A watercolor illustration inspired by the reference style. Soft brush textures, flowing paint strokes, pastel and blended colors, paper-like texture. Gentle and artistic mood with handmade quality."
+  }
+}

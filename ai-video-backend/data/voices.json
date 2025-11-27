@@ -1,0 +1,60 @@
+{
+  "clyde": {
+    "name": "Clyde",
+    "voice_id": "wyWA56cQNU2KqUW4eCsI",
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/Voices/wyWA56cQNU2KqUW4eCsI.mp3",
+    "description": "Strong, deep-voiced male narrator with dramatic presence. Ideal for cinematic stories, thriller content, and mystery videos.",
+    "tags": ["male", "dramatic", "cinematic", "intense"]
+  },
+  "benjamin": {
+    "name": "Benjamin",
+    "voice_id": "LruHrtVF6PSyGItzMNHS",
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/Voices/LruHrtVF6PSyGItzMNHS.mp3",
+    "description": "Clear, articulate narrator. Neutral tone. Educational videos, tutorials, explainers, or motivational content.",
+    "tags": ["male", "neutral accent", "clear", "versatile"]
+  },
+
+  "grandpa_spuds_oxley": {
+    "name": "Grandpa Spuds Oxley",
+    "voice_id": "NOpBlnGInO9m6vDvFkFC",
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/Voices/NOpBlnGInO9m6vDvFkFC.mp3",
+    "description": "Warm, grandfatherly storyteller. Children’s stories, storytelling.",
+    "tags": ["male", "elderly", "warm", "storyteller", "soft-spoken"]
+  },
+
+  "oracle": {
+    "name": "Oracle",
+    "voice_id": "1hlpeD1ydbI2ow0Tt3EW",
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/Voices/1hlpeD1ydbI2ow0Tt3EW.mp3",
+    "description": "An ethereal, almost mythical narrator. Excellent for fantasy, lore, ancient myths, and dreamlike stories.",
+    "tags": ["mystical", "ethereal", "fantasy", "mythical"]
+  },
+  "autumn_veil": {
+    "name": "Autumn Veil",
+    "voice_id": "KoVIHoyLDrQyd4pGalbs",
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/Voices/KoVIHoyLDrQyd4pGalbs.mp3",
+    "description": "A gentle, soothing female voice. Best for relaxation videos, bedtime stories, wellness content.",
+    "tags": ["female", "soothing", "gentle", "emotional"]
+  },
+  "peter": {
+    "name": "Peter",
+    "voice_id": "ZthjuvLPty3kTMaNKVKb",
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/Voices/ZthjuvLPty3kTMaNKVKb.mp3",
+    "description": "A clean, professional-sounding male voice. Great for documentaries, corporate videos, or general narration.",
+    "tags": ["male", "reliable", "balanced", "clear narration"]
+  },
+  "arabelle": {
+    "name": "Arabelle",
+    "voice_id": "aEO01A4wXwd1O8GPgGlF",
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/Voices/aEO01A4wXwd1O8GPgGlF.mp3",
+    "description": "A refined, elegant female narrator. Works beautifully for fantasy, storytelling, emotional narration, and poetic scenes.",
+    "tags": ["female", "soft", "storytelling", "graceful"]
+  },
+  "amelia": {
+    "name": "Amelia",
+    "voice_id": "nBoLwpO4PAjQaQwVKPI1",
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/Voices/nBoLwpO4PAjQaQwVKPI1.mp3",
+    "description": "A friendly, upbeat female voice with a conversational style. Perfect for social media content, trendy videos, and upbeat narration.",
+    "tags": ["female", "upbeat", "modern", "conversational"]
+  }
+}

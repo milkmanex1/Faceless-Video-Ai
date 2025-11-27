@@ -1,0 +1,14 @@
+# Backend
+ai-video-backend/node_modules/
+ai-video-backend/.env
+ai-video-backend/media/
+
+# Frontend
+ai-video-frontend/node_modules/
+ai-video-frontend/.next/
+ai-video-frontend/.env.local
+
+# General
+node_modules/
+.env
+*.env
