@@ -17,11 +17,12 @@
     "tags": ["sad", "tragedy"],
     "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Cold.opus"
   },
+
   "fur_elise": {
     "id": "fur_elise",
     "name": "Fur Elise",
     "tags": ["classical", "piano"],
-    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Fur_Elise.mp3"
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Fur_Elise_Louder.mp3"
   },
   "happy_violin": {
     "id": "happy_violin",
@@ -41,6 +42,12 @@
     "tags": ["suspense", "epic"],
     "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Paris.m4a"
   },
+  "melancholia": {
+    "id": "melancholia",
+    "name": "Melancholia",
+    "tags": ["sad", "spooky", "musicbox"],
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Melancholia.mp3"
+  },
   "presto": {
     "id": "presto",
     "name": "Presto",
@@ -57,7 +64,7 @@
     "id": "signal",
     "name": "Signal",
     "tags": ["tense", "mysterious"],
-    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Signal.m4a"
+    "preview_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/music/Signal_cut_louder.mp3"
   },
   "snowfall": {
     "id": "snowfall",

@@ -1,4 +1,14 @@
 {
+  "fantasy_realism": {
+    "name": "Fantasy Realism",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Fantasy_realism.jpg",
+    "prompt": "A fantasy realism digital painting inspired by the reference style. Highly detailed textures, realistic anatomy blended with fantastical elements, epic lighting, and magical atmospheres. Emphasize lifelike yet otherworldly qualities."
+  },
+  "photo_realism": {
+    "name": "Photo Realism",
+    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Photo_realism.avif",
+    "prompt": "A photorealistic digital artwork inspired by the reference style. Ultra-detailed textures, lifelike lighting, natural skin tones, and realistic depth of field. Emphasize clarity and accuracy, like a high-resolution photo."
+  },
   "anime": {
     "name": "Anime",
     "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Anime.jpg",
@@ -19,21 +29,13 @@
     "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Disney.png",
     "prompt": "A Disney-style animated illustration inspired by the reference style. Bright colors, exaggerated expressions, clean character outlines, magical lighting. Whimsical and cinematic atmosphere, reminiscent of classic Disney movies."
   },
-  "fantasy_realism": {
-    "name": "Fantasy Realism",
-    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Fantasy_realism.jpg",
-    "prompt": "A fantasy realism digital painting inspired by the reference style. Highly detailed textures, realistic anatomy blended with fantastical elements, epic lighting, and magical atmospheres. Emphasize lifelike yet otherworldly qualities."
-  },
+
   "neon_futuristic": {
     "name": "Neon Futuristic",
     "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Neon_futuristic.jpg",
     "prompt": "A neon futuristic cyberpunk illustration inspired by the reference style. Glowing neon lights, futuristic cityscapes, high-tech details, reflective surfaces. Emphasize vibrant colors, holograms, and a sci-fi cyberpunk mood."
   },
-  "photo_realism": {
-    "name": "Photo Realism",
-    "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Photo_realism.avif",
-    "prompt": "A photorealistic digital artwork inspired by the reference style. Ultra-detailed textures, lifelike lighting, natural skin tones, and realistic depth of field. Emphasize clarity and accuracy, like a high-resolution photo."
-  },
+
   "pixelated": {
     "name": "Pixelated",
     "image_url": "https://reqjvgebswjauwiswvqq.supabase.co/storage/v1/object/public/art_styles/Pixelated.webp",

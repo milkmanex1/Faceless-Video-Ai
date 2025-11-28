@@ -373,7 +373,7 @@ export default function CreateSeriesPage() {
                     <SelectValue placeholder="Choose Topic" />
                   </SelectTrigger>
                   <SelectContent>
-                  <SelectItem value={"true stories"}>True Stories</SelectItem>
+                    <SelectItem value={"true stories"}>True Stories</SelectItem>
                     {topics.map((topic) => (
                       <SelectItem key={topic} value={topic}>
                         {topic}
@@ -660,7 +660,7 @@ export default function CreateSeriesPage() {
                           type="button"
                           onClick={() => scrollArtStyles(1)}
                           aria-label="Scroll art style list right"
-                          className="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white shadow-sm transition hover:border-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                          className="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white shadow-sm transition hover:border-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-200"
                         >
                           <ChevronRight className="h-4 w-4 text-gray-600" />
                         </button>
@@ -684,7 +684,7 @@ export default function CreateSeriesPage() {
                               aria-pressed={isSelected}
                               className={`relative flex-shrink-0 w-44 h-56 overflow-hidden rounded-3xl border-2 border-transparent bg-white p-0 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
                                 isSelected
-                                  ? "border-blue-600 shadow-[0_10px_30px_rgba(37,99,235,0.35)]"
+                                  ? "border-blue-600 shadow-[0_20px_60px_rgba(37,99,235,0.5),0_0_0_4px_rgba(37,99,235,0.1)]"
                                   : "hover:border-gray-300"
                               }`}
                             >

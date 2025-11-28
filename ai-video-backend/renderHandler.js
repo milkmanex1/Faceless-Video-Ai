@@ -529,8 +529,8 @@ This rule overrides creativity, formatting, and style.
       // Validate word count and regenerate if necessary
       const actualWordCount = countWords(script);
       const targetWordCount = parseInt(wordCount);
-      const minWords = targetWordCount - 10;
-      const maxWords = targetWordCount + 10;
+      const minWords = targetWordCount - 20;
+      const maxWords = targetWordCount + 20;
 
       console.log(
         `Script word count: ${actualWordCount} (target: ${targetWordCount}, range: ${minWords}-${maxWords})`
@@ -564,14 +564,11 @@ This rule overrides creativity, formatting, and style.
         const retryWordCount = countWords(script);
         console.log(`Retry script word count: ${retryWordCount}`);
 
-        // If still too long, truncate the script
+        // If still too long, DONT truncate the script
         if (retryWordCount > maxWords) {
           console.log(
-            `Script still too long after retry (${retryWordCount} words), truncating...`
+            `Script still too long after retry (${retryWordCount} words), keeping full script to preserve content flow`
           );
-          const words = script.split(/\s+/);
-          script = words.slice(0, maxWords).join(" ") + ".";
-          console.log(`Truncated script word count: ${countWords(script)}`);
         }
       }
 
@@ -627,36 +624,66 @@ This rule overrides creativity, formatting, and style.
         setTimeout(r, TTS_CONFIG.DELAY_BETWEEN_REQUESTS)
       );
     }
+    //This step is to make image generation more accurate lol.
+    const rewriteSceneToVisualPrompt = async (sceneText) => {
+      const response = await openai.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: [
+          {
+            role: "system",
+            content:
+              "Rewrite the user's narration into a highly detailed, VISUAL image prompt. Focus ONLY on what can be drawn. Remove abstract ideas, emotions, metaphors, or backstory unless visually representable. Make it suitable for Stable Diffusion. Include: characters, setting, lighting, location, camera angle, atmosphere. Keep it literal and visual.",
+          },
+          {
+            role: "user",
+            content: sceneText,
+          },
+        ],
+        max_tokens: 150,
+        temperature: 0.4,
+      });
+
+      return response.choices[0].message.content.trim();
+    };
 
     // --- Parallel image generation for scene groups (fast) ---
-    const imagePromises = sceneGroups.map((sceneGroup, i) => {
+    const imagePromises = sceneGroups.map(async (sceneGroup, i) => {
       const imagePath = path.join(videoDir, `scene_${i}.jpg`);
 
-      // Enhanced prompt for strict aspect ratio composition
+      // 1. Rewrite narration into visual prompt
+      const visualPrompt = await rewriteSceneToVisualPrompt(sceneGroup.text);
+      console.log(`Scene ${i} visual prompt:`, visualPrompt);
+
+      // 2. Orientation prompt rules
       let orientationPrompt = "";
       if (video.aspect_ratio === "9:16") {
         orientationPrompt =
-          "PORTRAIT ORIENTATION ONLY: Create a tall vertical composition specifically designed for 9:16 aspect ratio. The image must be naturally portrait - subjects should be oriented vertically, scenes should be composed for tall format, no landscape elements rotated to fit. Use vertical composition techniques like stacked elements, tall buildings, vertical landscapes, or portrait-style framing. The image must be inherently portrait, not a rotated landscape. ";
+          "PORTRAIT ORIENTATION ONLY. A tall vertical composition designed for 9:16. No horizontal landscape framing.";
       } else if (video.aspect_ratio === "16:9") {
         orientationPrompt =
-          "LANDSCAPE ORIENTATION ONLY: Create a wide horizontal composition specifically designed for 16:9 aspect ratio. The image must be naturally landscape - subjects should be oriented horizontally, scenes should be composed for wide format, no portrait elements rotated to fit. Use horizontal composition techniques like panoramic views, side-by-side elements, or landscape-style framing. The image must be inherently landscape, not a rotated portrait. ";
+          "LANDSCAPE ORIENTATION ONLY. A wide cinematic composition designed for 16:9.";
       } else {
         orientationPrompt =
-          "SQUARE COMPOSITION ONLY: Create a balanced square composition specifically designed for 1:1 aspect ratio. The image must be naturally square - subjects should be centered and balanced within a square frame, no rectangular elements rotated to fit. Use square composition techniques like centered subjects, balanced symmetry, or circular framing. The image must be inherently square, not a rotated rectangle. ";
+          "SQUARE ORIENTATION ONLY. A centered and balanced 1:1 framing.";
       }
 
+      // 3. Style metadata
       const styleMeta = artStyles[video.art_style];
       const stylePrompt =
-        styleMeta?.prompt ||
-        `${video.art_style
-          .replace(/[_-]/g, " ")
-          .replace(/\b\w/g, (char) => char.toUpperCase())} illustration`;
+        styleMeta?.prompt ??
+        `${video.art_style.replace(/[_-]/g, " ")} illustration`;
 
-      return generateImage(
-        `${stylePrompt}. Subject: ${sceneGroup.text}. ${orientationPrompt} No text, no words, no letters, no writing, no captions, purely visual imagery only`,
-        imagePath,
-        video.aspect_ratio
-      );
+      // 4. Final prompt
+      const finalPrompt = `
+      ${stylePrompt}.
+      Scene: ${visualPrompt}.
+      ${orientationPrompt}
+      No words, no letters, no text, no captions.
+      Ultra detailed, high-quality professional artwork.
+      `;
+
+      // 5. Generate image
+      return generateImage(finalPrompt, imagePath, video.aspect_ratio);
     });
     const imageClips = await Promise.all(imagePromises);
 
